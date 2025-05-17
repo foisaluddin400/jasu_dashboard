@@ -19,6 +19,9 @@ import ResetPass from "../Auth/ResetPass";
 import Notification from "../page/Notification/Notification";
 import About from "../page/Settings/About";
 import Login from "../Auth/Login";
+import MangoFruit from "../page/mangoFruits/MangoFruit";
+import ManageDetails from "../page/mangoFruits/ManageDetails";
+import ManageOrder from "../page/manageOrder/ManageOrder";
 
 
 export const router = createBrowserRouter([
@@ -37,6 +40,18 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard/UserManagement",
         element: <UserManagement></UserManagement>,
+      },
+       {
+        path: "/dashboard/manageFruit",
+        element: <MangoFruit></MangoFruit>
+      },
+        {
+        path: "/dashboard/manageOrder",
+        element: <ManageOrder></ManageOrder>
+      },
+        {
+        path: "/dashboard/manageFruit/manageDetails",
+        element: <ManageDetails></ManageDetails>
       },
       {
         path: "/dashboard/CreatorManagement",

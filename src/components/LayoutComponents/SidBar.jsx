@@ -4,7 +4,7 @@ import create from "../../assets/routerImg/create.png";
 import settings from "../../assets/routerImg/settings.png";
 import subscription from "../../assets/routerImg/subscription.png";
 import user from "../../assets/routerImg/user.png";
-import logo from "../../assets/header/logo.png";
+import logo from "../../assets/header/logo1.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
@@ -21,13 +21,23 @@ const items = [
   },
   {
     key: "userManagement",
-    label: "User Management",
+    label: "User",
     icon: user,
     link: "/dashboard/UserManagement",
   },
 
-  
-  
+   {
+    key: "mango",
+    label: "Manage Fruit",
+    icon: user,
+    link: "/dashboard/manageFruit",
+  },
+    {
+    key: "manage",
+    label: "Manage Order",
+    icon: user,
+    link: "/dashboard/manageOrder",
+  },
   {
     key: "categoriesManagement",
     label: "Categories Management",
@@ -138,10 +148,10 @@ const SidBar = () => {
   };
 
   return (
-    <div className="custom-sidebar h-[100vh] bg-[#120c66]">
+    <div className="custom-sidebar h-[100vh] bg-white">
       
-      <div className="custom-sidebar-logo flex justify-center">
-        <img src={logo} alt="Logo" className="w-[160px]" />
+      <div className="custom-sidebar-logo flex justify-center py-6">
+        <img src={logo} alt="Logo" className="w-[110px]" />
       </div>
       <div className="menu-items">
         {items.map((item) => {
@@ -163,7 +173,7 @@ const SidBar = () => {
                 to={item.link}
                 className={`menu-item my-4 mx-5 py-3 px-3 flex items-center cursor-pointer ${
                   selectedKey === item.key || isSettingsActive || isCreatorActive || isCategoriesActive
-                    ? "bg-[#bb3538] text-white rounded-md"
+                    ? "bg-[#205D39] text-white rounded-md"
                     : "bg-white rounded-md hover:bg-gray-200"
                 }`}
                 onClick={(e) => {
@@ -207,7 +217,7 @@ const SidBar = () => {
                       to={child.link}
                       className={`menu-item p-4 flex items-center cursor-pointer ${
                         selectedKey === child.key
-                          ? "bg-[#bb3538] text-white"
+                          ? "bg-[#205D39] text-white"
                           : "hover:bg-gray-200"
                       }`}
                       onClick={() => {
