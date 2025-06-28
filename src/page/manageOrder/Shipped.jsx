@@ -25,11 +25,11 @@ const Shipped = () => {
         {
             key: "1",
             name: "Flssoyd Miles",
-            orderedItem: "Apple Concentrate - Guava",
+            orderedItem: "Apple Concendda the radfdfdde - Guava",
             price: "$120.00",
             date: "2025-04-10",
             qty: 1,
-            orderStatus: "Processing",
+            orderStatus: "Procdasdf essing",
             email: "danten@mail.ru",
             phone: "+1 123 456 7890",
             location: "Shiloh, Hawaii",
@@ -79,7 +79,7 @@ const Shipped = () => {
                             labelInValue
                             defaultValue={{ value: 'process', label: 'Processing' }}
                             style={{ width: 120 }}
-                      
+
                             options={[
                                 {
                                     value: 'process',
@@ -89,7 +89,7 @@ const Shipped = () => {
                                     value: 'shipped',
                                     label: 'Shipped',
                                 },
-                                 {
+                                {
                                     value: 'completed',
                                     label: 'Completed',
                                 },
