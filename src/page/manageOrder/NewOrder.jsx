@@ -25,7 +25,7 @@ const NewOrder = () => {
         {
             key: "1",
             name: "Floyd Miles",
-            orderedItem: "Apple Concentrate - Guava",
+            orderedItem: "Apple Codsdhteha thedfdfd            most of thencentrate - Guava",
             price: "$120.00",
             date: "2025-04-10",
             qty: 1,
